@@ -1,7 +1,8 @@
-````markdown
 # Finding the Correct Visual Evidence Without Forgetting: Mitigating Hallucination in LVLMs via Inter-Layer Visual Attention Discrepancy
 
 This is the official implementation of the paper **"Finding the Correct Visual Evidence Without Forgetting: Mitigating Hallucination in LVLMs via Inter-Layer Visual Attention Discrepancy"**, accepted by **ICML 2026**.
+
+---
 
 ## Overview
 
@@ -18,6 +19,8 @@ Specifically, ILVAD obtains the attention weights from early generated tokens to
 <p align="center">
   <img src="assets/overview.pdf" width="90%">
 </p>
+
+---
 
 ## Installation
 
@@ -54,6 +57,8 @@ Download **MSCOCO**, **LLaVA-Bench (In-the-Wild)**, and other benchmarks. Organi
 Download the LVLM checkpoints and update `model_dir` in the corresponding `.sh` scripts if needed, for example:
 [LLaVA-1.5-7B](https://huggingface.co/llava-hf/llava-1.5-7b-hf), [LLaVA-NeXT-7B](https://huggingface.co/llava-hf/llava-v1.6-vicuna-7b-hf) and [Qwen3-VL-8B-Instruct](https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct)
 
+---
+
 ## Usage
 
 Run inference with the provided scripts:
@@ -81,6 +86,8 @@ python eval/llava_wild.py \
 
 Please check the bash scripts for how to read the results.
 
+---
+
 ## Citation
 
 If you find this work useful for your research, please consider citing our paper:
@@ -99,8 +106,9 @@ If you find this work useful for your research, please consider citing our paper
 }
 ```
 
+---
+
 ## Acknowledgements
 
 Our codebase is adapted from [VHR](https://github.com/jinghan1he/VHR) and [SSL](https://github.com/huazhenglin2003/SSL). We thank the authors for releasing their code!
 
-````
