@@ -1,0 +1,13 @@
+numpy==1.26.3
+scikit-learn==1.2.2
+pandas==2.2.2
+pillow==10.2.0
+protobuf==3.20.0
+sentencepiece==0.1.99
+torch==2.1.2
+transformers==4.45.0
+accelerate==0.26.0
+nltk==3.5
+inflect==7.3.1
+pycocoevalcap
+openai
