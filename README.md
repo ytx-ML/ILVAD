@@ -8,17 +8,18 @@ This is the official implementation of the paper **"Finding the Correct Visual E
 
 Large Vision-Language Models (LVLMs) have shown remarkable performance on a wide range of vision-language tasks. Despite this progress, they are still prone to hallucination, generatingresponses that are inconsistent with visual content.
 
+
+<p align="center">
+  <img src="assets/insights.png" width="90%">
+</p>
+
 In this work, we find that LVLMs tend to hallucinate when they pay insufficient attention to the correct visual evidence and gradually forget it during the generation process. We empirically find that although LVLMs overall attend insufficiently to visual evidence, they exhibit sensitivity to the correct visual evidence in specific layers, with notable inter-layer discrepancy.Motivated by this observation, we propose **Inter-Layer Visual Attention Discrepancy (ILVAD)**, a training-free hallucination mitigation method that enhances visual evidence during generation. 
 
+<p align="center">
+  <img src="assets/overview.png" width="90%">
+</p>
+
 Specifically, ILVAD obtains the attention weights from early generated tokens to visual tokens across layers and identifies the visual tokens that are repeatedly activated as visual evidence, forming a saliency map. The saliency map is then used to enhance attention to visual evidence during generation. In addition, ILVAD leverages the saliency map to compute attention scores from generated text tokens to visual evidence, allowing the model to select and emphasize text tokens that are strongly grounded in the image.
-
-<p align="center">
-  <img src="assets/insights.pdf" width="90%">
-</p>
-
-<p align="center">
-  <img src="assets/overview.pdf" width="90%">
-</p>
 
 ---
 
